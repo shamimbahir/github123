@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="stringMatch()">Match 1</button>
+<p id="demo"></p>
+
+<button onclick="stringMatch()">Match 2</button>
+<p id="demo1"></p>
+
+<script type="text/javascript">
+function myFunction(){
+	var str = "The rain in SPAIN stays mainly in the plain";
+	var res =str.match(/ain/g);
+	// var to =s.match(exp);
+	document.getElementById("demo").innerHTML = res;
+}
+// function stringMatch(){
+// 	var s="Hello! Good Morning ! We Welcome You.";
+// 	var exp=s.match(exp);
+// 	document.getElementById("demo1").innerHTML = to;
+// }
+function DigitMatch(){
+	var digits = "100 , 1000 or 10000";
+	var pattern = digits.match(pattern);
+	document.getElementById("demo2").innerHTML = result;
+}
+</script>
+</body>
+</html>

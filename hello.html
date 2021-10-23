@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		function myFunction(){
+		var str = "Hello World";
+		var res = str.charAt(0)
+		document.write("charAT Function:" + " " + res);
+		document.write("<br>");
+		var strl = "FOLKS"
+		document.write("concat Function:" + " " + str.concat(strl));
+		document.write("<br>");
+		document.write("Index Of Function:" + " " + str.indexOf("WORLD"));
+		document.write("<br>");
+		document.write("Length of string:" + " " + str.length);
+		document.write("<br>");
+		document.write("Converting to Lower case:" + " " + str.tolowerCase());
+	 }
+	</script>
+</head>
+<body>
+<p>Click here to execute builtin functions in jQuery.</p>
+<button onclick="myFunction()">Click me</button>
+</body>
+</html>

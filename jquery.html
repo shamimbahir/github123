@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>BS1</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style type="text/css">
+		#buttonid{
+			background-color:yellow;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<button id="buttonid">Click me</button>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#buttonid").click(function(){
+		alert("hy! you clicked the button");
+	});
+});
+</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>hide show</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style type="text/css">
+		#panel, #flip{
+			padding: 5px;
+			text-align: center;
+			background-color: aqua;
+			border: solid1px #c3c3c3;
+		}
+		#panel{
+			padding:30px;
+		}
+	</style>
+ 
+</head>
+<body>
+<!-Panel Slide!-->
+<!-- <div id="flip">Click to slide up panel</div>
+<div id="panel">Hello world!</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#flip").click(function(){
+		$("#panel").slideToggle("fast");	
+	});
+});
+</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Panel Slide</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<style type="text/css">
+	#hide , #Show{
+		background-color: #02d4db;
+		border: solid 2px red;
+		color: #ffea00;
+		height: 30px;
+		width:90px; 
+	}
+	</style>
+</head>
+<body>
+
+<p id="p1">If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Hide</button>
+<button id="Show">Show</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("#p1").hide(1000);
+		});
+		$("#Show").click(function(){
+			$("#p1").show(1000);
+		});
+	});
+</script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Panel slide</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<p>Demonstrate fadeIn() with different parameter.</p>
+<button id="btn1">Click to show fade in boxes</button><br><br>
+<div id="div1" style="width:80px; height: 80px;display:none;background-color: red;"></div><br>
+<div id="div2" style="width:80px; height: 80px;display:none;background-color: green;"></div><br>
+<div id="div3" style="width:80px; height: 80px;display:none;background-color: blue;"></div><br>
+<button id="hide">Click to hide FadeIn</button> -->
+
+<!-- fadein -->
+<!-- <script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+        });
+		$("#hide").click(function(){
+		$("#div1").hide(1000);
+		$("#div2").hide(1000);
+		$("#div3").hide(1010);
+		});
+	});
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panel Slide</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style type="text/css">
+		#panel , #flip1{
+			padding:5px;
+			font-size: 18px;
+			text-align: center;
+			background-color: #555;
+			color: white;
+			border: solid 1px #666;
+		    border-radius: 3px;
+		}
+		#panel1 {
+			padding:50px;
+			display: none;
+
+		}
+	</style>
+</head>
+<body>
+<!-- Panel Stop -->
+<button id="stop">Stop sliding</button>
+<div id="flip1">Click to slide down panel</div>
+<div id="panel1">Hello World</div>
+<!-- Panel stop -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#flip1").click(function(){
+			$("#panel1").slideDown(5000);
+		});
+		$("#stop").click(function(){
+			$("#panel1").stop();
+		});
+	});
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button onclick="DigitMatch()">Match 3</button>
+
+<p id="demo2"></p>
+
+<button onclick="LastIndex()">Match 4</button>
+
+<p id="demo"></p>
+
+
+<script type="text/javascript">
+	function DigitMatch(){
+		var digits = "100 , 1000 or 10000";
+		var pattern = /\d{4}/g;
+		var result = digits.match(pattern);
+		document.getElementById("demo2").innerHTML = result ;
+	}
+	function LastIndex(){
+		var txt = "Hello planet earth, you are created for all living things among all  planet.";
+		var n =txt.lastIndexOf("planet");
+		document.getElementById("demo").innerHTML = n;
+	}
+</script>
+</body>
+</html>

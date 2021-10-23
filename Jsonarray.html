@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<h2>Converting an Object or Array  in JSON String</h2>
+<div id="result"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var Car = [
+{		
+        "CarName" :"Mehran",
+        "CarColor" :"SilverGrey",
+        "CarModel" :"2003",
+        "CarAverage" :"2000",
+    },
+    {
+    	"CarName" : "Corola",
+    	"CarColor":"Black",
+    	"CarModel":"2016",
+    	"CarAverage":"5000"
+    }
+		];
+		var JSONstring = JSON.stringify(Car);
+		$('#result').html(JSONstring);
+	});
+</script>
+</body>
+</html>
